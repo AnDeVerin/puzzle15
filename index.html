@@ -8,6 +8,7 @@
     <title>Puzzle 15</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Sigmar+One&display=swap">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
 </head>
 
 <body>
@@ -31,63 +32,21 @@
 
         <section class="game">
 
-            <div class="box game__box">
-                <div id="1" class="cell">
-                    <div class="cell__num">1</div>
-                </div>
-                <div id="2" class="cell">
-                    <div class="cell__num">2</div>
-                </div>
-                <div id="3" class="cell">
-                    <div class="cell__num">3</div>
-                </div>
-                <div id="4" class="cell">
-                    <div class="cell__num">4</div>
-                </div>
-                <div id="5" class="cell">
-                    <div class="cell__num">5</div>
-                </div>
-                <div id="6" class="cell">
-                    <div class="cell__num">6</div>
-                </div>
-                <div id="7" class="cell">
-                    <div class="cell__num">7</div>
-                </div>
-                <div id="8" class="cell">
-                    <div class="cell__num">8</div>
-                </div>
-                <div id="9" class="cell">
-                    <div class="cell__num">9</div>
-                </div>
-                <div id="10" class="cell">
-                    <div class="cell__num">10</div>
-                </div>
-                <div id="11" class="cell">
-                    <div class="cell__num">11</div>
-                </div>
-                <div id="12" class="cell">
-                    <div class="cell__num">12</div>
-                </div>
-                <div id="13" class="cell">
-                    <div class="cell__num">13</div>
-                </div>
-                <div id="14" class="cell">
-                    <div class="cell__num">14</div>
-                </div>
-                <div id="15" class="cell">
-                    <div class="cell__num">15</div>
-                </div>
-                <div id="0" class="cell">
-                    <div class="cell__num">0</div>
-                </div>
-
-            </div>
+            <div class="box game__box"></div>
 
             <div class="game__controls">
                 <button class="button button_type_reset">Reset</button>
                 <button class="button button_type_start">Start</button>
             </div>
+
         </section>
+
+        <template data-component="cell">
+            <div class="cell">
+                <div class="cell__num">#</div>
+            </div>
+        </template>
+
         <script src="./index.js"></script>
     </main>
 </body>
