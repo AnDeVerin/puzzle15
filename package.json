@@ -1,7 +1,7 @@
 {
   "name": "puzzle15",
-  "version": "1.0.0",
-  "description": "Practice task for Q&A-6 @Yandex.Praktikum",
+  "version": "2.0.0",
+  "description": "Practice task for Q&A @Yandex.Praktikum",
   "main": "index.js",
   "scripts": {
     "test": "npx eslint --ext .js ."
